@@ -129,7 +129,8 @@ def get_text_chunks(text):
 
 def get_vectorstore(text_chunks):
     embeddings = HuggingFaceEmbeddings(
-                                        model_name="jhgan/ko-sroberta-multitask",
+                                        # model_name="jhgan/ko-sroberta-multitask",
+                                        model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
                                         model_kwargs={'device': 'cpu'},
                                         encode_kwargs={'normalize_embeddings': True}
                                         )  
