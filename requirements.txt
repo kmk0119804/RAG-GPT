@@ -9,4 +9,4 @@ openai
 pypdf
 loguru
 docx2txt
-pip install langchain_community
+langchain_community
